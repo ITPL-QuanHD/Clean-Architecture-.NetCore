@@ -47,29 +47,6 @@ Clean Architecture provides a framework that separates concerns, making it easie
 
 Here is the folder structure of the project, with the repository interfaces placed in the **Application** layer, and the corresponding implementations placed in the **Infrastructure** layer:
 
-/src
-  ├── /API                           # Controllers, API endpoints, routing, etc.
-  │     ├── MemberController.cs        # Member controller for handling member-related requests
-  │     └── ProductController.cs      # Product controller for handling product-related requests
-  
-  ├── /Application                    # Use cases, business logic, and repository interfaces
-  │     ├── /IRepository               # Contains repository interfaces
-  │     │     └── IMemberRepository.cs  # Interface for Member repository
-  │     └── /Services                 # Business logic for operations
-  │           └── MemberService.cs     # Service for Member operations (e.g., create, get members)
-
-  ├── /Domain                         # Core business logic (Entities, Models)
-  │     ├── /Models                   # Core business entities
-  │     │     ├── Member.cs           # Member entity
-  │     │     └── Product.cs          # Product entity
-
-  ├── /Infrastructure                 # Infrastructure implementations (e.g., database, external services)
-  │     ├── /Repositories             # Repository implementations for data access
-  │     │     └── MemberRepository.cs  # Concrete implementation of IMemberRepository
-  │     └── /ExternalServices         # External services (e.g., Email, third-party APIs)
-  │           └── EmailService.cs     # Service for sending emails or interacting with external services
-
-
 ## Installation and Usage
 
 ### Prerequisites
