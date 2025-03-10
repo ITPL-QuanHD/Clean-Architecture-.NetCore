@@ -18,7 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModel\" />
+    <Folder Include="ViewModel\ModelRequet\" />
+    <Folder Include="ViewModel\ModelRepository\" />
   </ItemGroup>
 
 </Project>
